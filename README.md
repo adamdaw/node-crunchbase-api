@@ -1,5 +1,7 @@
 # Node.js wrapper for CrunchBase API V3
 
+Based on [crunchbase2](https://github.com/Coding-House/crunchbase2) (now out of date and incompatible with API V3).
+
 ## Examples
 
 ```javascript
