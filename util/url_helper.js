@@ -31,7 +31,7 @@ function getOrganizationsUrl(params) {
 
 function getOrganizationUrl(permalink) {
   return endpoint
-  + 'organization/' + permalink + keyParam;
+  + 'organizations/' + permalink + keyParam;
 }
 
 function getPeopleUrl(page){
@@ -42,7 +42,7 @@ function getPeopleUrl(page){
 
 function getPersonUrl(permalink){
   return endpoint
-  + 'person/' + permalink + keyParam;
+  + 'people/' + permalink + keyParam;
 }
 
 function getProductsUrl(params) {
@@ -53,7 +53,7 @@ function getProductsUrl(params) {
 
 function getProductUrl(permalink) {
   return endpoint
-  + 'product/' + permalink + keyParam;
+  + 'products/' + permalink + keyParam;
 }
 
 function getFundingRoundUrl(uuid) {
