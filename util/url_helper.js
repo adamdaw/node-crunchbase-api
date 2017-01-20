@@ -29,6 +29,12 @@ function getOrganizationsUrl(params) {
   + '&' + qs.stringify(params);
 }
 
+function getOdmOrganizationsUrl(params) {
+  return endpoint
+  + 'odm-organizations' + keyParam
+  + '&' + qs.stringify(params);
+}
+
 function getOrganizationUrl(permalink) {
   return endpoint
   + 'organizations/' + permalink + keyParam;
@@ -37,6 +43,12 @@ function getOrganizationUrl(permalink) {
 function getPeopleUrl(page){
   return endpoint
   + 'people' + keyParam
+  + '&' + qs.stringify(page);
+}
+
+function getOdmPeopleUrl(page){
+  return endpoint
+  + 'odm-people' + keyParam
   + '&' + qs.stringify(page);
 }
 
@@ -95,11 +107,17 @@ module.exports = {
   getOrganizationsUrl: function(params) {
     return getOrganizationsUrl(params);
   },
+  getOdmOrganizationsUrl: function(params) {
+    return getOdmOrganizationsUrl(params);
+  },
   getOrganizationUrl: function(permalink) {
     return getOrganizationUrl(permalink);
   },
   getPeopleUrl: function(page) {
     return getPeopleUrl(page);
+  },
+  getOdmPeopleUrl: function(params) {
+    return getOdmPeopleUrl(params);
   },
   getPersonUrl: function(permalink) {
     return getPersonUrl(permalink);
