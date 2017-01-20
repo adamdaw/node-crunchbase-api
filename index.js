@@ -34,6 +34,11 @@ function getOrganizations(params, callback) {
   createRequest(url, callback);
 }
 
+function getOdmOrganizations(params, callback) {
+  var url = urlHelper.getOdmOrganizationsUrl(params);
+  createRequest(url, callback);
+}
+
 function getOrganization(permalink, callback) {
   var url = urlHelper.getOrganizationUrl(permalink);
   createRequest(url, callback);
@@ -41,6 +46,11 @@ function getOrganization(permalink, callback) {
 
 function getPeople(page, callback){
   var url = urlHelper.getPeopleUrl(page);
+  createRequest(url, callback);
+}
+
+function getOdmPeople(page, callback){
+  var url = urlHelper.getOdmPeopleUrl(page);
   createRequest(url, callback);
 }
 
@@ -122,11 +132,17 @@ module.exports = {
   organizations: function(params, callback) {
     return getOrganizations(params, callback);
   },
+  odmOrganizations: function(params, callback) {
+    return getOdmOrganizations(params, callback);
+  },
   organization: function(permalink, callback) {
     return getOrganization(permalink, callback);
   },
   people: function(page, callback) {
     return getPeople(page, callback);
+  },
+  odmPeople: function(page, callback) {
+    return getOdmPeople(page, callback);
   },
   person: function(permalink, callback) {
     return getPerson(permalink, callback);

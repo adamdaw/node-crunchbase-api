@@ -1,6 +1,6 @@
 {
   "name": "crunchbase-api",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A node.js library for accessing the CrunchBase REST API",
   "main": "index.js",
   "license": "Apache-2.0",
@@ -71,6 +71,11 @@
       "name": "Michael Hirn",
       "email": "mj@autumnai.com",
       "url": "https://github.com/MichaelHirn"
+    },
+    {
+      "name": "Ghislain de Juvigny",
+      "email": "gdjuvigny@gmail.com",
+      "url": "https://github.com/ghislaindj"
     }
   ],
   "engines": {

@@ -105,6 +105,24 @@ crunchbase.categories( {query: "1" }, function(error, results) {
     console.log(results) // Print the search results
   }
 });
+
+// API Endpoints for Open Data Map (ODM)
+// Lookup all organizations with keyword "airbnb" on ODM
+//Accepts title search query
+crunchbase.odmOrganizations( {query: "airbnb" } , function(error, results) {
+  if (!error) {
+    console.log(results) // Print the search results
+  }
+});
+
+//get pages of people on ODM
+//accepts page number
+crunchbase.odmPeople( {query: "1" }, function(error, results) {
+  if (!error) {
+    console.log(results) // Print the search results
+  }
+});
+
 ```
 
 ## Redis support
